@@ -1,5 +1,7 @@
 package com.helloeave.metro2.parsers;
 
+import com.helloeave.metro2.parsers.fixed.FixedLengthMetroParser;
+
 public class ParserFactory {
 
 	private Format format;
