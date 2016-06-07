@@ -2,7 +2,9 @@ package com.helloeave.metro2.parsers;
 
 import java.io.DataInputStream;
 
+import com.helloeave.metro2.records.Record;
+
 public interface MetroParser {
 
-	void parseMetroDataStream(DataInputStream in);
+	Record parseMetroDataStream(DataInputStream in);
 }
