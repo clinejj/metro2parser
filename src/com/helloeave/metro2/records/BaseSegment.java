@@ -4,54 +4,53 @@ import java.util.Date;
 
 public class BaseSegment {
 	
-	private Integer blockDescriptorWord;  		// 4 - 1-4 each block - N
-	private Integer recordDescriptorWord;		// 4 - 1-4 each record - N
-	private Integer processingIndicator;		// 1 - 5 - N
-	private Date timestamp;						// 14 - 6-19 - N
-	private Integer correctionIndicator;		// 1 - 20 - N
-	private String idNumber;					// 20 - 21-40 - AN
-	private String cycleIdentifier;				// 2 - 41-42 - AN
-	private String consumerAccountNumber;		// 30 - 43-72 - AN
-	private String portfolioType;				// 1 - 73 - AN
-	private String accountType;					// 2 - 74-75 - AN
-	private Date dateOpened;					// 8 - 76-83 - N
-	private Integer creditLimit;				// 9 - 84-92 - N
-	private Integer highestCreditOrLoan;		// 9 - 93-101 - N
-	private String termsDuration;				// 3 - 102-104 - AN
-	private String termsFrequency;				// 1 - 105 - AN
-	private Integer scheduledMonthlyPayment;	// 9 - 106-114 - N
-	private Integer actualPayment;				// 9 - 115-123 - N
-	private String accountStatus;				// 2 - 124-125 - AN
-	private String paymentRating;				// 1 - 126 - AN
-	private String paymentHistoryProfile;		// 24 - 127-150 - AN
-	private String specialComment;				// 2 - 151-152 - AN
-	private String complianceConditionCode;		// 2 - 153-154 - AN
-	private Integer currentBalance;				// 9 - 155-163 - N
-	private Integer amountPastDue;				// 9 - 164-172 - N
-	private Integer chargeOffAmount;			// 9 - 173-181 - N
-	private Date billingDate;					// 8 - 182-189 - N
-	private Date fcraCompliance;				// 8 - 190-197 - N
-	private Date dateClosed;					// 8 - 198-205 - N
-	private Date dateLastPayment;				// 8 - 206-213 - N
-	// Blank fill									17 - 214-230 - AN
-	private String consumerTxnType;				// 1 - 231 - AN
-	private String surname;						// 25 - 232-256 - AN
-	private String firstName;					// 20 - 257-276 - AN
-	private String middleName;					// 20 - 277-296 - AN
-	private String generationCode;				// 1 - 297 - AN
-	private String socialSecurityNumber;		// 9 - 298-306 - N
-	private Date dateOfBirth;					// 8 - 307-314 - N
-	private String telephoneNumber;				// 10 - 315-324 - N
-	private String ecoaCode;					// 1 - 325 - AN
-	private String consumerInformationIndicator;// 2 - 326-327 - AN
-	private String countryCode;					// 2 - 328-329 - AN
-	private String firstLineAddress;			// 32 - 330-361 - AN
-	private String secondLineAddress;			// 32 - 362-393 - AN
-	private String city;						// 20 - 394-413 - AN
-	private String state;						// 2 - 414-415 - AN
-	private String postalCode;					// 9 - 416-424 - AN
-	private String addressIndicator;			// 1 - 425 - AN
-	private String residenceCode;				// 1 - 426 - AN
+	private Integer blockDescriptorWord;
+	private Integer recordDescriptorWord;
+	private Integer processingIndicator;
+	private Date timestamp;
+	private Integer correctionIndicator;
+	private String idNumber;
+	private String cycleIdentifier;
+	private String consumerAccountNumber;
+	private String portfolioType;
+	private String accountType;
+	private Date dateOpened;
+	private Integer creditLimit;
+	private Integer highestCreditOrLoan;
+	private String termsDuration;
+	private String termsFrequency;
+	private Integer scheduledMonthlyPayment;
+	private Integer actualPayment;
+	private String accountStatus;
+	private String paymentRating;
+	private String paymentHistoryProfile;
+	private String specialComment;
+	private String complianceConditionCode;
+	private Integer currentBalance;
+	private Integer amountPastDue;
+	private Integer chargeOffAmount;
+	private Date billingDate;
+	private Date fcraCompliance;
+	private Date dateClosed;
+	private Date dateLastPayment;
+	private String consumerTxnType;
+	private String surname;
+	private String firstName;
+	private String middleName;
+	private String generationCode;
+	private String socialSecurityNumber;
+	private Date dateOfBirth;
+	private String telephoneNumber;
+	private String ecoaCode;
+	private String consumerInformationIndicator;
+	private String countryCode;
+	private String firstLineAddress;
+	private String secondLineAddress;
+	private String city;
+	private String state;
+	private String postalCode;
+	private String addressIndicator;
+	private String residenceCode;
 	
 	public String getAccountStatus() {
 		return accountStatus;
