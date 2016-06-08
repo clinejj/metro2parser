@@ -6,5 +6,5 @@ import com.helloeave.metro2.records.Header;
 
 public interface HeaderParser {
 
-	Header parseHeader(DataInputStream in);
+	Header parseHeader(DataInputStream in) throws ParseException;
 }

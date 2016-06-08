@@ -1,32 +1,26 @@
 package com.helloeave.metro2.records;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Header {
 	
-	public static final DateFormat DATE_FORMAT = new SimpleDateFormat("MMddYYYY");
-	
-	// Comments represent LEN - Position - Technique
-	private Integer blockDescriptorWord;  		// 4 - 1-4 each block - N
-	private Integer recordDescriptorWord;		// 4 - 1-4 each record - N
-	private String recordId;					// 6 - 5-10 - AN
-	private String cycleNumber;					// 2 - 11-12 - AN
-	private String innovisProgramId;			// 10 - 13-22 - AN
-	private String equifaxProgramId;			// 10 - 23-32 - AN
-	private String experianProgramId;			// 5 - 33-37 - AN
-	private String transunionProgramId;			// 10 - 38-47 - AN
-	private Date activityDate;					// 8 - 48-55 - N
-	private Date createdDate;					// 8 - 56-63 - N
-	private Date programDate;					// 8 - 64-71 - N
-	private Date programRevisionDate;			// 8 - 72-79 - N
-	private String reporterName;				// 40 - 80-119 - AN
-	private String reporterAddress;				// 96 - 120-215 - AN
-	private String reporterPhoneNumber;			// 10 - 216-225 - N
-	private String softwareVendorName;			// 40 - 226-265 - AN
-	private String softwareVersionNumber;		// 5 - 266-270 - AN
-	// Blank fill									156 - 271-426 - AN
+	private Integer blockDescriptorWord;
+	private Integer recordDescriptorWord;
+	private String recordId;
+	private String cycleNumber;
+	private String innovisProgramId;
+	private String equifaxProgramId;
+	private String experianProgramId;
+	private String transunionProgramId;
+	private Date activityDate;
+	private Date createdDate;
+	private Date programDate;
+	private Date programRevisionDate;
+	private String reporterName;
+	private String reporterAddress;
+	private String reporterPhoneNumber;
+	private String softwareVendorName;
+	private String softwareVersionNumber;
 	
 	public Integer getBlockDescriptorWord() {
 		return blockDescriptorWord;
