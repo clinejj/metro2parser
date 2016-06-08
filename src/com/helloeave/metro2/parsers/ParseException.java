@@ -1,6 +1,8 @@
 package com.helloeave.metro2.parsers;
 
-public class ParseException extends Exception {
+import java.io.IOException;
+
+public class ParseException extends IOException {
 
 	public ParseException(String msg) {
 		super(msg);
