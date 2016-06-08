@@ -228,5 +228,4 @@ public class FixedLengthHeaderParser extends AbstractFixedLengthParser implement
 			super(msg, cause);
 		}
 	}
-
 }
