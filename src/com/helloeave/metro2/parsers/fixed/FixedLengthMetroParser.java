@@ -4,6 +4,7 @@ import java.io.DataInputStream;
 
 import com.helloeave.metro2.parsers.HeaderParser;
 import com.helloeave.metro2.parsers.MetroParser;
+import com.helloeave.metro2.parsers.ParseException;
 import com.helloeave.metro2.records.BaseSegment;
 import com.helloeave.metro2.records.Header;
 import com.helloeave.metro2.records.Record;
@@ -14,14 +15,14 @@ public class FixedLengthMetroParser implements MetroParser {
 	private HeaderParser headerParser = new FixedLengthHeaderParser();
 	
 	@Override
-	public Record parseMetroDataStream(DataInputStream in) {
+	public Record parseMetroDataStream(DataInputStream in) throws ParseException {
 		record = new Record();
 		record.setHeader(parseHeader(in));
 		record.setData(parseBaseSegment(in));
 		return record;
 	}
 
-	private Header parseHeader(DataInputStream in) {
+	private Header parseHeader(DataInputStream in) throws ParseException {
 		return headerParser.parseHeader(in);
 	}
 

@@ -6,5 +6,5 @@ import com.helloeave.metro2.records.Record;
 
 public interface MetroParser {
 
-	Record parseMetroDataStream(DataInputStream in);
+	Record parseMetroDataStream(DataInputStream in) throws ParseException;
 }
