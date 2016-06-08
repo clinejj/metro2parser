@@ -1,15 +1,9 @@
 package com.helloeave.metro2.records;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class BaseSegment {
-
-	public static final DateFormat DATE_FORMAT = new SimpleDateFormat("MMddYYYY");
-	public static final DateFormat DATE_TIME_FORMAT = new SimpleDateFormat("MMddYYYYHHmmss");
 	
-	// Comments represent LEN - Position - Technique
 	private Integer blockDescriptorWord;  		// 4 - 1-4 each block - N
 	private Integer recordDescriptorWord;		// 4 - 1-4 each record - N
 	private Integer processingIndicator;		// 1 - 5 - N
